@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # 1. Cargar datos
-df = pd.read_csv('archive/shopping_behavior.csv')
+df = pd.read_csv('shopping_behavior.csv')
 
 # 2. Inspeccion rapida
 print("Primeras filas:")

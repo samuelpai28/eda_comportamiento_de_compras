@@ -17,7 +17,7 @@ from sklearn.metrics import (
 
 
 # 1. Cargar datos
-df = pd.read_csv("archive/shopping_behavior.csv")
+df = pd.read_csv("shopping_behavior.csv")
 
 
 # 2. Regresión lineal 
