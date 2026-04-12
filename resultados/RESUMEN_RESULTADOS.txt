@@ -1,0 +1,20 @@
+Resultados generados en: resultados/
+
+EDA:
+- 01_descriptiva_numericas.png
+- 02_distribuciones_numericas_hist_kde.png
+- 03_boxplots_numericas.png
+- 04_barras_categoricas.png
+- 05_correlacion_numericas.png
+
+Modelos (métricas por validación cruzada):
+- 06_metricas_cv_regresion_lineal.csv
+- 07_metricas_cv_regresion_logistica.csv
+- 08_metricas_cv_modelo_final_random_forest.csv
+
+Visualización del modelo final (holdout):
+- 09_roc_descuento_holdout.png
+- 10_matrices_confusion_holdout.png
+
+Notas:
+- 'Review Rating' no se usó como feature para predicción porque normalmente ocurre después de la compra.

@@ -2,6 +2,8 @@
 
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # 1. Cargar datos
 df = pd.read_csv('shopping_behavior.csv')
@@ -63,6 +65,21 @@ print("  Mediana:", np.median(montos))
 print("  Varianza:", np.var(montos))
 print("  Suma total:", montos.sum())
 print()
+
+# 7.1 Matriz de correlacion (columnas numericas)
+columnas_numericas = df.select_dtypes(include=[np.number])
+matriz_corr = columnas_numericas.corr()
+print("Matriz de correlacion:")
+print(matriz_corr)
+print()
+
+# Visualizacion: heatmap de la matriz de correlacion
+plt.figure(figsize=(8, 6))
+sns.heatmap(matriz_corr, annot=True, cmap='RdYlBu_r', center=0, fmt='.2f',
+            square=True, linewidths=0.5)
+plt.title('Matriz de correlacion - Variables numericas')
+plt.tight_layout()
+plt.show()
 
 # 8. Agrupacion y agregacion (groupby)
 print("Gasto promedio por categoria:")

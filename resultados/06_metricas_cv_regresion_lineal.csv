@@ -1,0 +1,2 @@
+modelo,target,cv_splits,r2_mean,r2_std,rmse_mean,rmse_std,mae_mean,mae_std
+LinearRegression,Purchase Amount (USD),5,-0.04276780205318498,0.02049164764048357,24.166235635630073,0.22901245836752282,20.822451187584342,0.29996189303529835
